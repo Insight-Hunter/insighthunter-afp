@@ -1,0 +1,15 @@
+-- D1 schema
+CREATE TABLE IF NOT EXISTS reports (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  company_id TEXT NOT NULL,
+  file_key TEXT NOT NULL,
+  created_at TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS audit_logs (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  event_type TEXT NOT NULL,
+  actor TEXT NOT NULL,
+  meta TEXT,
+  timestamp TEXT NOT NULL
+);
