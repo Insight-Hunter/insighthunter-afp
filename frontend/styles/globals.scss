@@ -1,0 +1,76 @@
+$bg-dark: #0a0f1c;
+$accent-purple: #7d3cff;
+$accent-cyan: #00e5ff;
+
+body {
+  background: $bg-dark;
+  color: white;
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+main {
+  padding: 2rem;
+}
+
+.wizard-container, .admin-dashboard {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.step-card {
+  background: rgba(20, 26, 40, 0.8);
+  border: 1px solid rgba(125, 60, 255, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.08);
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  background: #0e1424;
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  color: white;
+}
+
+button {
+  background: linear-gradient(90deg, $accent-purple, $accent-cyan);
+  border: none;
+  color: #0a0f1c;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.progress {
+  height: 8px;
+  background: #0e1424;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.progress-bar {
+  height: 8px;
+  background: $accent-purple;
+  box-shadow: 0 0 10px $accent-cyan;
+  border-radius: 6px;
+  transition: width 0.4s ease;
+}
+
+.audit-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.audit-table th, .audit-table td {
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 0.5rem;
+}
