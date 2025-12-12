@@ -1,6 +1,6 @@
 // workers/reportSignedUrl.ts
 import { verifyAccessJwt, requireRole, isSubject } from "./utils/auth";
-import "./utils/presign";
+import reportSignedUrl from "./utils/presign";
 
 export default {
   async fetch(request: Request, env: any): Promise<Response> {
