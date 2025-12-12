@@ -25,5 +25,9 @@ WORKER_BASE_URL = "https://api.insighthunter.app.workers.dev"
 ACCESS_ISSUER = "https://<your-team>.cloudflareaccess.com"
 ACCESS_AUD = "<your-access-app-audience-tag>"
 JWKS_URL = "https://<your-team>.cloudflareaccess.com/cdn-cgi/access/certs"
-R2_BUCKET_URL = "https://<accountid>.r2.cloudflarestorage.com/insighthunter-reports"
+R2_BUCKET_URL = "https://<accountid>.r2.cloudflarestorage.com/insighthunter-reports""
+
+[triggers]
+crons = ["0 2 * * *"] # nightly cleanup at 02:00 UTC
+
 
