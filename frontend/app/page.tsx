@@ -73,135 +73,16 @@ const scheduledPayments = [
 { id: 4, vendor: ‘Office Essentials’, amount: 12300, dueDate: ‘2024-12-22’, status: ‘scheduled’, discount: 0, priority: ‘low’ },
 { id: 5, vendor: ‘Manufacturing Partners’, amount: 95000, dueDate: ‘2024-12-25’, status: ‘pending’, discount: 1900, priority: ‘high’ }
 ];
-
-const vendors = [
-{
-id: 1,
-name: ‘Acme Corp’,
-totalSpend: 540000,
-paymentTerms: ‘Net 30’,
-onTimePayment: 98,
-avgInvoice: 45000,
-relationship: ‘excellent’,
-discountAvailable: true
-},
-{
-id: 2,
-name: ‘Global Supplies Inc’,
-totalSpend: 280000,
-paymentTerms: ‘Net 45’,
-onTimePayment: 95,
-avgInvoice: 28500,
-relationship: ‘good’,
-discountAvailable: false
-},
-{
-id: 3,
-name: ‘Tech Solutions Ltd’,
-totalSpend: 720000,
-paymentTerms: ‘Net 30’,
-onTimePayment: 100,
-avgInvoice: 62000,
-relationship: ‘excellent’,
-discountAvailable: true
-},
-{
-id: 4,
-name: ‘Office Essentials’,
-totalSpend: 145000,
-paymentTerms: ‘Net 60’,
-onTimePayment: 92,
-avgInvoice: 12300,
-relationship: ‘good’,
-discountAvailable: false
+export default function Home() {
+  return (
+    <section className="section-card">
+      <h1>Welcome to InsightHunter</h1>
+      <p>Your enterprise financial nervous system.</p>
+      <div style={{ display: "flex", gap: "1rem", marginTop: "1rem" }}>
+        <a href="/company">Company Dashboard</a>
+        <a href="/admin">Admin Dashboard</a>
+      </div>
+    </section>
+  );
 }
-];
 
-const workflowAutomations = [
-{
-name: ‘Invoice Approval’,
-trigger: ‘Invoice received < $5K’,
-action: ‘Auto-approve and schedule payment’,
-active: true,
-executions: 847
-},
-{
-name: ‘Collection Reminder’,
-trigger: ‘Invoice overdue 7+ days’,
-action: ‘Send escalating reminder sequence’,
-active: true,
-executions: 234
-  </header>
-
-  {/* Navigation */}
-  <div className="bg-white border-b border-gray-200">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <nav className="flex gap-8">
-        <button
-          onClick={() => setActiveTab('dashboard')}
-          className={`py-4 px-2 border-b-2 font-medium text-sm transition-colors ${
-            activeTab === 'dashboard'
-              ? 'border-indigo-600 text-indigo-600'
-              : 'border-transparent text-gray-500 hover:text-gray-700'
-          }`}
-        >
-          Dashboard
-        </button>
-        <button
-          onClick={() => setActiveTab('autonomous')}
-          className={`py-4 px-2 border-b-2 font-medium text-sm transition-colors flex items-center gap-2 ${
-            activeTab === 'autonomous'
-              ? 'border-indigo-600 text-indigo-600'
-              : 'border-transparent text-gray-500 hover:text-gray-700'
-          }`}
-        >
-          <Zap className="w-4 h-4" />
-          Autonomous Ops
-        </button>
-        <button
-          onClick={() => setActiveTab('payments')}
-          className={`py-4 px-2 border-b-2 font-medium text-sm transition-colors flex items-center gap-2 ${
-            activeTab === 'payments'
-              ? 'border-indigo-600 text-indigo-600'
-              : 'border-transparent text-gray-500 hover:text-gray-700'
-          }`}
-        >
-          <CreditCard className="w-4 h-4" />
-          Payment Scheduling
-        </button>
-        <button
-          onClick={() => setActiveTab('vendors')}
-          className={`py-4 px-2 border-b-2 font-medium text-sm transition-colors flex items-center gap-2 ${
-            activeTab === 'vendors'
-              ? 'border-indigo-600 text-indigo-600'
-              : 'border-transparent text-gray-500 hover:text-gray-700'
-          }`}
-        >
-          <Building2 className="w-4 h-4" />
-          Vendor Management
-        </button>
-        <button
-          onClick={() => setActiveTab('analytics')}
-          className={`py-4 px-2 border-b-2 font-medium text-sm transition-colors ${
-            activeTab === 'analytics'
-              ? 'border-indigo-600 text-indigo-600'
-              : 'border-transparent text-gray-500 hover:text-gray-700'
-          }`}
-        >
-          Analytics
-        </button>
-      </nav>
-    </div>
-  </div>
-
-  {/* Main Content */}
-  <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <TabContent />
-  </main>
-</div>
-```
-
-);
-};
-
-export default Page;
