@@ -1,18 +1,10 @@
 import { NextResponse } from "next/server";
 
-export async function POST(request: Request) {
-  const payload = await request.json();
-  const res = await fetch(`${process.env.WORKER_BASE_URL}/report`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload)
-        return NextResponse.json(fdata);
-}
-
 export async function GET() {
-  const res = await fetch(`${process.env.WORKER_BASE_URL}/admin-reports`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_WORKER_BASE_URL}/admin-reports`, {
     credentials: "include"
   });
-  const data = await res.json();
-  return NextResponse.json({ ok: res.ok });
+  const text = await res.text();
+  if (!res.ok) return new NextResponse(text, { status: res.status });
+  return NextResponse.json(JSON.parse(text));
 }
