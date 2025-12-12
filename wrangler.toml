@@ -1,0 +1,21 @@
+name = "insighthunter"
+main = "workers/index.ts"
+compatibility_date = "2025-12-12"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "insighthunter-db"
+database_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "insighthunter-reports"
+
+[vars]
+ENVIRONMENT = "production"
+WORKER_BASE_URL = "https://<your-worker-subdomain>.workers.dev"
