@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS contributors (
+  id TEXT PRIMARY KEY,
+  role TEXT NOT NULL,
+  domain TEXT NOT NULL,
+  risk_tolerance TEXT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS audit_logs (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  contributor_id TEXT NOT NULL,
+  action TEXT NOT NULL,
+  details TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (contributor_id) REFERENCES contributors(id)
+);
