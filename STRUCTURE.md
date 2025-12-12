@@ -1,4 +1,4 @@
-## insighthunter/
+insighthunter/
 ├── wrangler.toml 
 ├── package.json
 ├── tsconfig.json
