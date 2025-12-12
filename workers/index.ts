@@ -1,6 +1,7 @@
 import quizWorker from "./quiz";
 import previewWorker from "./preview";
 import reportWorker from "./report";
+import auditWorker from "./audit";
 import cleanupWorker from "./cleanup";
 
 export default {
@@ -10,6 +11,7 @@ export default {
     if (url.pathname.startsWith("/quiz")) return quizWorker.fetch(request, env);
     if (url.pathname.startsWith("/preview")) return previewWorker.fetch(request, env);
     if (url.pathname.startsWith("/report")) return reportWorker.fetch(request, env);
+    if (url.pathname.startsWith("/audit")) return auditWorker.fetch(request, env);
 
     return new Response("Not found", { status: 404 });
   },
