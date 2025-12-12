@@ -1,16 +1,14 @@
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
-  const { companyId } = await request.json();
-
-  const res = await fetch(`${process.env.WORKER_BASE_URL}/report-signed-url`, {
+  const body = await request.json();
+  const res = await fetch(`${process.env.NEXT_PUBLIC_WORKER_BASE_URL}/report-signed-url`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    credentials: "include", // forward Access cookie
-    body: JSON.stringify({ contributorId: companyId })
+    credentials: "include",
+    body: JSON.stringify(body)
   });
-
-  if (!res.ok) return NextResponse.json({ error: "Worker error" }, { status: res.status });
-  const data = await res.json();
-  return NextResponse.json(data);
+  const text = await res.text();
+  if (!res.ok) return new NextResponse(text, { status: res.status });
+  return NextResponse.json(JSON.parse(text));
 }
