@@ -3,64 +3,33 @@ $purple: #7d3cff;
 $cyan: #00e5ff;
 $text: #ffffff;
 
-.theme-dark {
+body {
   background: $bg;
   color: $text;
-  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
 }
-.app-header {
-  display: flex; justify-content: space-between; padding: 1rem 2rem;
-  background: linear-gradient(90deg, rgba(10,15,28,1), rgba(10,15,28,0.6));
-  border-bottom: 1px solid rgba(0,229,255,0.2);
-  .logo { color: $purple; font-weight: 800; letter-spacing: 1px; }
-  .profile { color: $cyan; }
-}
-button {
-  background: transparent; border: 1px solid $cyan; color: $text; padding: 0.5rem 1rem;
-  border-radius: 6px; box-shadow: 0 0 12px rgba(0,229,255,0.3);
-}
-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
-th, td { border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.5rem; }
-a { color: $cyan; }
-input {
-  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.2);
-  color: $text; padding: 0.5rem 0.75rem; border-radius: 6px;
-}
-.section-card {
-  border: 1px solid rgba(125,60,255,0.3);
-  padding: 1rem; border-radius: 12px; margin: 1rem 0;
-  box-shadow: 0 0 18px rgba(125,60,255,0.25);
-}
-$bg: #0a0f1c;
-$purple: #7d3cff;
-$cyan: #00e5ff;
-$text: #ffffff;
 
-.theme-dark {
-  background: $bg;
-  color: $text;
-  min-height: 100vh;
-}
-.app-header {
-  display: flex; justify-content: space-between; padding: 1rem 2rem;
-  background: linear-gradient(90deg, rgba(10,15,28,1), rgba(10,15,28,0.6));
-  border-bottom: 1px solid rgba(0,229,255,0.2);
-  .logo { color: $purple; font-weight: 800; letter-spacing: 1px; }
-  .profile { color: $cyan; }
-}
 button {
-  background: transparent; border: 1px solid $cyan; color: $text; padding: 0.5rem 1rem;
-  border-radius: 6px; box-shadow: 0 0 12px rgba(0,229,255,0.3);
+  background: transparent;
+  border: 1px solid $cyan;
+  color: $text;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0,229,255,0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
-th, td { border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0.5rem; }
-a { color: $cyan; }
-input {
-  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.2);
-  color: $text; padding: 0.5rem 0.75rem; border-radius: 6px;
+button:hover {
+  background: rgba(0,229,255,0.1);
 }
+
 .section-card {
+  background: rgba(255,255,255,0.02);
   border: 1px solid rgba(125,60,255,0.3);
-  padding: 1rem; border-radius: 12px; margin: 1rem 0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 1rem 0;
   box-shadow: 0 0 18px rgba(125,60,255,0.25);
 }
