@@ -1,8 +1,5 @@
-# Creating a downloadable investor-focused README.md file for InsightHunter
 
-import os
-
-readme_content = """# InsightHunter — The Enterprise Financial Nervous System
+# InsightHunter — The Enterprise Financial Nervous System
 
 InsightHunter is a Cloudflare‑native SaaS platform designed to give companies **real‑time financial intelligence** with unmatched security, automation, and transparency.  
 We transform complex workflows into a seamless lifecycle: **quiz → preview → branded PDF report → secure storage → retrieval → admin oversight & cleanup.**
