@@ -9,21 +9,6 @@
 InsightHunter is a Cloudflare‑native SaaS platform designed to give companies **real‑time financial intelligence** with unmatched security, automation, and transparency.  
 We transform complex workflows into a seamless lifecycle: **quiz → preview → branded PDF report → secure storage → retrieval → admin oversight & cleanup.**
 
----
-
-## 🌟 Why InsightHunter?
-
-- **For Companies, Investors, or Individual Freelancers:**  
-  - A scalable SaaS architecture built entirely on Cloudflare Workers, R2, KV, and D1.  
-  - Automated operational hygiene (storage lifecycle, audit logs, cleanup) ensures long‑term
-    sustainability.  
-  - Contributor‑friendly onboarding and futuristic UI/UX drive adoption and retention.  
-  - Clear monetization path: tiered access to reporting, analytics, and admin dashboards.  
-  - Instant onboarding with wizard‑driven setup.  
-  - Branded, neon‑styled PDF reports that communicate financial posture clearly.  
-  - Secure access via Cloudflare Access — role‑based controls for company vs. admin.  
-  - Transparent audit logs and report history for compliance and trust.  
-
 ## 🎯 Overview
 
 InsightHunter is an enterprise-grade autonomous financial operations platform that leverages artificial intelligence to automate accounts receivable, accounts payable, cash flow management, and vendor relationships. The platform reduces manual work by up to 87%, improves DSO by an average of 7 days, and unlocks working capital through intelligent payment optimization.
@@ -35,8 +20,6 @@ InsightHunter is an enterprise-grade autonomous financial operations platform th
 - **$1.2M+ working capital** released through optimization
 - **94.2% collection rate** with AI-driven workflows
 - **99.4% accuracy** in autonomous decision-making
-
------
 
 ## 🚀 Features
 
@@ -63,7 +46,18 @@ InsightHunter is an enterprise-grade autonomous financial operations platform th
 - **Trend Charts**: Historical performance with future projections
 - **Custom Dashboards**: Configurable widgets and KPIs
 
------
+## 🌟 Why InsightHunter?
+
+- **For Companies, Investors, or Individual Freelancers:**  
+  - A scalable SaaS architecture built entirely on Cloudflare Workers, R2, KV, and D1.  
+  - Automated operational hygiene (storage lifecycle, audit logs, cleanup) ensures long‑term
+    sustainability.  
+  - Contributor‑friendly onboarding and futuristic UI/UX drive adoption and retention.  
+  - Clear monetization path: tiered access to reporting, analytics, and admin dashboards.  
+  - Instant onboarding with wizard‑driven setup.  
+  - Branded, neon‑styled PDF reports that communicate financial posture clearly.  
+  - Secure access via Cloudflare Access — role‑based controls for company vs. admin.  
+  - Transparent audit logs and report history for compliance and trust.  
 
 ### 2. Autonomous Operations Center
 
@@ -126,8 +120,6 @@ The system operates autonomously using predefined rules and machine learning:
 - **Predictive Modeling**: 94%+ accuracy in forecasting
 - **Anomaly Detection**: Real-time issue identification
 
------
-
 ### 3. Payment Scheduling
 
 #### Smart Payment Calendar
@@ -169,8 +161,6 @@ The system operates autonomously using predefined rules and machine learning:
 - **High Priority**: Critical vendors, discount opportunities
 - **Medium Priority**: Standard payment terms
 - **Low Priority**: Flexible timing, no urgency
-
------
 
 ### 4. Vendor Management
 
@@ -220,8 +210,6 @@ The system operates autonomously using predefined rules and machine learning:
 - **On-Time Payment Rate**: 96%
 - **At-Risk Relationships**: 3 flagged
 - **Potential Savings**: $28K annually
-
------
 
 ### 5. Advanced Analytics
 
@@ -287,8 +275,6 @@ The system operates autonomously using predefined rules and machine learning:
 - CSV for data integration
 - API for real-time access
 - Scheduled email delivery
-
------
 
 ### 6. Workflow Automation
 
