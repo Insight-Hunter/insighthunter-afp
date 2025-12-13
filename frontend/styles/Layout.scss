@@ -1,0 +1,21 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #0a0f1c, #1a1f2c);
+  border-bottom: 1px solid rgba(0,229,255,0.2);
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $purple;
+  }
+
+  nav a {
+    margin-left: 1rem;
+    color: $cyan;
+    text-decoration: none;
+    font-weight: 500;
+  }
+}
