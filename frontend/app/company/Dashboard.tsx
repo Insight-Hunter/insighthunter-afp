@@ -29,6 +29,25 @@ export default function CompanyDashboard() {
       </div>
       {url && (<p><a href={url} target="_blank" rel="noreferrer">Open PDF</a></p>)}
       {error && (<p style={{ color: "red" }}>{error}</p>)}
-    </section>
+    </section>,
+
+    <section className="section-card">
+     <h2>Company Snapshot</h2>
+     <p>Role: Treasurer</p>
+     <p>Domain: Liquidity</p>
+     <p>Risk tolerance: Moderate</p>
+     <p>Last report: Dec 12 <button>Download</button></p>
+   </section>
+
+   <section className="section-card">
+    <h3>Recent Activity</h3>
+    <ul>
+     <li>✓ Quiz submitted</li>
+     <li>✓ Preview seeded</li>
+     <li>✓ Report generated</li>
+    </ul>
+   </section>
+
+    
   );
 }
