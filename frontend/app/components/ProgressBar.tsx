@@ -1,4 +1,6 @@
 // frontend/app/components/ProgressBar.tsx
+import "../styles/progressBar.scss"
+
 "use client";
 export default function ProgressBar({ step, total }: { step: number; total: number }) {
   const percent = (step / total) * 100;
