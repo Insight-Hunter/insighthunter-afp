@@ -1,5 +1,10 @@
-
 # Insight Hunter — Financial Nervous System
+
+![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![AI Powered](https://img.shields.io/badge/AI-Powered-purple.svg)
+
+> **Autonomous Financial Operations Platform** - Transform your financial operations with AI-powered automation, intelligent decision-making, and real-time predictive analytics.
 
 InsightHunter is a Cloudflare‑native SaaS platform designed to give companies **real‑time financial intelligence** with unmatched security, automation, and transparency.  
 We transform complex workflows into a seamless lifecycle: **quiz → preview → branded PDF report → secure storage → retrieval → admin oversight & cleanup.**
@@ -10,21 +15,14 @@ We transform complex workflows into a seamless lifecycle: **quiz → preview →
 
 - **For Companies, Investors, or Individual Freelancers:**  
   - A scalable SaaS architecture built entirely on Cloudflare Workers, R2, KV, and D1.  
-  - Automated operational hygiene (storage lifecycle, audit logs, cleanup) ensures long‑term sustainability.  
+  - Automated operational hygiene (storage lifecycle, audit logs, cleanup) ensures long‑term
+    sustainability.  
   - Contributor‑friendly onboarding and futuristic UI/UX drive adoption and retention.  
   - Clear monetization path: tiered access to reporting, analytics, and admin dashboards.  
   - Instant onboarding with wizard‑driven setup.  
   - Branded, neon‑styled PDF reports that communicate financial posture clearly.  
   - Secure access via Cloudflare Access — role‑based controls for company vs. admin.  
   - Transparent audit logs and report history for compliance and trust.  
-
-# InsightHunter
-
-![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![AI Powered](https://img.shields.io/badge/AI-Powered-purple.svg)
-
-> **Autonomous Financial Operations Platform** - Transform your financial operations with AI-powered automation, intelligent decision-making, and real-time predictive analytics.
 
 ## 🎯 Overview
 
