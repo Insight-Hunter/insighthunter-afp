@@ -9,3 +9,8 @@ import "../styles/Layout.scss";
     <a href="/preview">Simulation Preview</a>
   </nav>
 </header>
+
+<footer className="app-footer">
+  <a href="/docs">Docs</a> | <a href="/support">Support</a> | <a href="/admin">Admin</a>
+</footer>
+
