@@ -8,13 +8,11 @@ We transform complex workflows into a seamless lifecycle: **quiz → preview →
 
 ## 🌟 Why InsightHunter?
 
-- **For Investors:**  
+- **For Companies, Investors, or Individual Freelancers:**  
   - A scalable SaaS architecture built entirely on Cloudflare Workers, R2, KV, and D1.  
   - Automated operational hygiene (storage lifecycle, audit logs, cleanup) ensures long‑term sustainability.  
   - Contributor‑friendly onboarding and futuristic UI/UX drive adoption and retention.  
   - Clear monetization path: tiered access to reporting, analytics, and admin dashboards.  
-
-- **For Companies (Users):**  
   - Instant onboarding with wizard‑driven setup.  
   - Branded, neon‑styled PDF reports that communicate financial posture clearly.  
   - Secure access via Cloudflare Access — role‑based controls for company vs. admin.  
