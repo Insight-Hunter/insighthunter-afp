@@ -1,5 +1,6 @@
 import "../styles/globals.scss";
-import "../styles/Layout.scss";
+import "../styles/header.scss";
+import "../styles/footer.scss";
 
 <header className="app-header">
   <div className="logo">INSIGHTHUNTER</div>
